@@ -1,0 +1,25 @@
+<%-include partials/header.ejs %>
+
+<%-include partials/main_nav.ejs %>
+
+<!-- Main Content -->
+    <main>
+
+    <!-- inject different partial files -->
+      <% if(title == "Home"){ %>
+      <%-include partials/home_content.ejs %>
+
+      <% } if (title == "About"){ %>
+      <%-include partials/about_content.ejs %>
+
+      <% } if (title == "Products"){%>
+      <%-include partials/products_content.ejs %>
+
+      <% } if ((title == "Services") || (title == "Contact")){%>
+      <%-include partials/service_contact_container.ejs %>
+      <% } %>
+    </main>
+
+<%-include partials/bottom_nav.ejs %>
+
+<%-include partials/footer.ejs %>
