@@ -1,3 +1,10 @@
+/*
+  Author: Heesoo Lim
+  studentID: 301061152
+  Date: October 21, 2020
+  File Name: business_contact.js
+*/
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');

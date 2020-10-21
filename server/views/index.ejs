@@ -15,8 +15,11 @@
       <% } if (title == "Products"){%>
       <%-include content/products_content.ejs %>
 
-      <% } if ((title == "Services") || (title == "Contact")){%>
-      <%-include partials/service_contact_container.ejs %>
+      <% } if (title == "Services"){ %>
+      <%-include content/services_content.ejs %>
+
+      <% } if (title == "Contact"){%>
+      <%-include content/contact_content.ejs %>
       <% } %>
     </main>
 

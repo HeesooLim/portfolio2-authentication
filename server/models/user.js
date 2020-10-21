@@ -1,3 +1,10 @@
+/*
+  Author: Heesoo Lim
+  studentID: 301061152
+  Date: October 21, 2020
+  File Name: user.js
+*/
+
 // require modules for the User model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');

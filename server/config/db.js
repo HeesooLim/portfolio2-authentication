@@ -1,3 +1,11 @@
+/*
+  Author: Heesoo Lim
+  studentID: 301061152
+  Date: October 21, 2020
+  File Name: db.js
+*/
+
+
 module.exports = 
 {
     // "URI": "mongodb://localhost/portfolio",

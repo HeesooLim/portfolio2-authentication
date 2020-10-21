@@ -1,5 +1,4 @@
 <!-- Main Navigation -->
-
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
   <a class="navbar-brand" href="/home"><img src="/Assets/images/logo.png" alt="Brand image" width="30" height="30"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +9,6 @@
     <ul class="navbar-nav ml-auto">
 
     <!-- highlight anchor -->
-    
     <% if(title == "Home"){ %>
     <li class="nav-item active">
     <% } else {%>
@@ -59,16 +57,20 @@
         <a class="nav-link" href="/contact">Contact</a>
       </li>
 
-      <% if(typeof displayName == 'string' && displayName) { %>
+    <% if(typeof displayName == 'string' && displayName) { %>
+      <li class="nav-item">
+        <a href="/logout" class="nav-link">Logout</a>
+      </li>
+      <li class="navbar-text"><i class="fa fa-sm fa-user"></i><b> <%= displayName %></b></li>
+    <% } else { %>
+      <% if(title == "Login") { %>
+        <li class="nav-item active">
+      <% } else {%>
         <li class="nav-item">
-          <a href="/logout" class="nav-link">Sign out</a>
-        </li>
-        <li class="navbar-text"><i class="fa fa-sm fa-user"></i><b> <%= displayName %></b></li>
-      <% } else { %>
-        <li class="nav-item">
-          <a href="/login" class="nav-link">Sign in</a>
-        </li>
       <% } %>
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+    <% } %>
     </ul>
   </div>
 </nav>

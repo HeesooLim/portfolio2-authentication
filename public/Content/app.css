@@ -1,14 +1,13 @@
 /*
   Author: Heesoo Lim
   studentID: 301061152
-  Date: October 05, 2020
+  Date: October 21, 2020
   File Name: app.css
 */
 
 
 /* custom css goes here */
 
-/* general */
 body {
   margin-top: 54px;
   background-image: linear-gradient(rgba(196, 196, 196, 0.863), rgba(196, 196, 196, 0.863)), url(/Assets/images/background3.jpg);
@@ -16,7 +15,6 @@ body {
   background-attachment: fixed;
 }
 
-/* no underline when hovered */
 a:hover {
   text-decoration: none;
   color: blanchedalmond;
@@ -27,31 +25,7 @@ a:hover {
   margin: 5px 0;
 }
 
-/* applied to all containers */
-/* .generalContainer {
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-} */
-
-/* footerContainer > sitemap */
-/* .sitemap {
-  display: inline-block;
-  text-align: left;
-  margin-right: 10%;
-} */
-
-/* anchors in sitemap */
-/* .sitemap a {
-  display: block;
-  color:  rgb(182, 182, 182);
-  padding-bottom: 5px;
-}
-
-.sitemap a:hover {
-  color: blanchedalmond;
-} */
-
-/* Container for footer on every page */
+/* footer for every page */
 footer {
   background-color: #304B64;
   /* font-size: 14px; */
@@ -63,62 +37,17 @@ footer a {
   color: rgb(182, 182, 182);
 }
 
+/* anchors under contact in footer */
 .footerContact a {
   line-height: 37px;
 }
-
-/* footer a:hover {
-  color: blanchedalmond;
-} */
-
-/* .footerContainer h3 {
-  padding: 20px 0px 20px 0px;
-  margin-bottom: 0px;
-  color: white;
-} */
-
-/* footerContainer > footerContact */
-/* .footerContact {
-  display: inline-block;
-  text-align: left;
-  margin-left: 10%;
-} */
-
-/* .footerContact p {
-  margin-bottom: 12.5px;
-} */
 
 /* footer navigation bar custom style */
 .navbar-custom {
   background-color: #304B64;
 }
 
-/* buttons in all pages */
-/* .generalContainer a.button {
-  display: inline-block;
-  margin-top: 20px;
-  background-color:rgb(89, 107, 134);
-  font-size: 23px;
-  padding: 15px 25px 15px 25px;
-  color: white;
-  border-radius: 3px;
-} */
-
-/* .generalContainer a.button:hover {
-  background-color: rgb(61, 73, 92);
-} */
-
-
-/* style for home page */
-/* .generalContainer .homeContainer {
-  background-color:  rgba(255, 255, 255, 0.7);
-}
-
-.homeContainer {
-  padding: 100px 0px 150px 0px ;
-  margin-bottom: 200px;
-} */
-
+/* form's background and margin */
 .loginForm {
   background-color: rgba(255, 255, 255, 0.747);
   margin-bottom: 180px;
@@ -129,11 +58,6 @@ footer a {
   font-family: arial;
 }
 
-/* .rounded-circle {
-  height: 200px;
-  width: 200px;
-} */
-
 #businessContactHeading {
   margin-top: 70px;
 }
@@ -143,22 +67,26 @@ h1 {
   font-family: serif;
 }
 
+/* home page's text */
 .container .rounded-bottom h6, .container .rounded-bottom h5 {
   margin-top: 20px;
   font-family: serif;
 }
 
+/* home page container */
 .container .rounded-bottom {
   background-color: rgba(255, 255, 255, 0.733);
   margin-bottom: 150px;
 }
 
+/* custom size button */
 .btn-xl {
   padding: 20px 40px;
   font-size: 20px;
   border-radius: 5px;
 }
 
+/* navbar text margin (display name when logged in) */
 .navbar-text {
   margin: 0px 10px;
 }
@@ -175,31 +103,6 @@ h1 {
   margin: 40px 0px;
 }
 
-
-/* container in about, products, service, and contact */
-/* .productContainer { */
-  /* padding: 5% 15% 5% 15%; */
-  /* padding: 0% 15% 0% 15%;
-  margin: 150px 0px 150px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.productContainer h1 {
-  display: block;
-} */
-
-/* image container in productContainer */
-/* .productImg {
-  margin-top: 7%;
-  margin-bottom: 7%;
-  width: 300px;
-  height: 300px;
-} */
-
-
-
 img {
   width: 100%;
   height: auto;
@@ -210,6 +113,8 @@ img {
   margin: 150px 0px;
   padding: 50px 0px;
 }
+
+/* description for each product */
 .projectDescription {
   padding: 7% 0;
 }
@@ -219,41 +124,14 @@ img {
   background-color: rgba(255, 255, 255, 0.74);
 }
 
-/* align the text to the right side for a flipped product element */
-/* .project:nth-of-type(2) .productDescription {
-  text-align: right;
-} */
-
-
-/* container for services, contact */
-/* .serviceContainer {
-  padding-top: 60px;
-  margin: 110px 0px 150px 0px;
-} */
-
-/* remove the margin in product container */
-/* .serviceContainer .productContainer {
-  margin: 0px 0px 0px 0px;
-} */
-
-/* service element */
-/* .serviceIndividual {
-  background-color: rgb(163, 163, 163);
-  width: 200px;
-  height: 200px;
-  margin: 2px;
-  position: relative;
-  margin-top: 55px;
-  margin-bottom: 130px;
-} */
-
+/* container of pictures in services */
 #serviceContainter .col-2 {
   background-color:  rgb(190, 190, 190);
   padding: 5px;
   margin: 10px;
 }
 
-/* overlay element on serviceIndividual */
+/* overlay element on services pictures */
 .overlay {
   position: absolute;
   left: 0;
@@ -271,6 +149,7 @@ img {
   transition: 0.5s;
 }
 
+/* title of pictures that are under services */
 #service .title {
   font-family: Arial;
   font-size: 14px;
@@ -281,45 +160,3 @@ img {
   margin-bottom: 30px;
   font-size: 30px;
 }
-/* form for contact page */
-/* form {
-  margin: 5% 15% 5% 15%;
-  padding: 5%;
-  background-color: rgba(255, 255, 255, 0.267);
-  box-shadow: 1px 1px 10px #cfcfcf;
-} */
-
-/* container in contact page */
-/* .contactContainer {
-  padding: 0% 15% 5% 15%;
-  margin: 0px 0px 150px 0px;
-} */
-
-/* my contact information container */
-/* #myContact {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  background-color: rgba(255, 255, 255, 0.267);
-  margin: 5% 15% 5% 15%;
-  padding: 30px 0px 10px 0px;
-  box-shadow: 1px 1px 10px #cfcfcf;
-} */
-
-/* columns in my contact information */
-/* .contactColumn  {
-  display: inline-block;
-  text-align: left;
-} */
-
-/* left columns in my contact information */
-/* .contactColumn:first-of-type {
-  margin-right: 5%;
-} */
-
-/* rightcolumns in my contact information */
-/* .contactColumn:last-of-type {
-  margin-left: 5%;
-} */
-
-/* media (1150px) */

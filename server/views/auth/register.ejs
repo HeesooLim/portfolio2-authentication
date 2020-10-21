@@ -2,119 +2,70 @@
 
 <%-include ../partials/main_nav.ejs %>
 
-
-
 <main class="container">
+
 <!-- Message Area -->
 <% if(messages.length > 0) { %>
-<div class="alert alert-danger">
-    <%= messages %>
-</div>
-
+    <div class="alert alert-danger">
+        <%= messages %>
+    </div>
 <% } %>
 
-<!-- <div class="row">
-    <div class="offset-md-1 col-md-10">
-        <h1>Please Register</h1>
-        <form method="post" autocomplete="off">
-            <fieldset class="form-group">
-                <label for="username">Username: </label>
-                <input type="text" class="form-control"
-                name="username"
-                placeholder="Enter username"
-                id="username"
-                required autofocus>
-            </fieldset>
+<!-- registration form -->
+    <div class="row justify-content-md-center">
+        <div class="col-6 text-center rounded p-5 my-5 loginForm">
+            <h1>Register</h1>
 
-            <fieldset class="form-group">
-                <label for="password">Password: </label>
-                <input type="password" class="form-control"
-                name="password"
-                placeholder="Enter password"
-                id="password"
-                required>
-            </fieldset>
+            <form class="px-5 mt-4" method="post" autocomplete="off">
+                <fieldset class="form-group">
+                    <label for="username">Username: </label>
+                    <input type="text" class="form-control"
+                    name="username"
+                    placeholder="Enter username"
+                    id="username"
+                    required autofocus>
+                </fieldset>
 
-            <fieldset class="form-group">
-                <label for="email">Email: </label>
-                <input type="email" class="form-control"
-                name="email"
-                placeholder="Enter email address"
-                id="email"
-                required>
-            </fieldset>
+                <fieldset class="form-group">
+                    <label for="password">Password: </label>
+                    <input type="password" class="form-control"
+                    name="password"
+                    placeholder="Enter password"
+                    id="password"
+                    required>
+                </fieldset>
 
-            <fieldset class="form-group">
-                <label for="displayName">Display Name: </label>
-                <input type="text" class="form-control"
-                name="displayName"
-                placeholder="Enter display name"
-                id="displayName"
-                required>
-            </fieldset>
+                <fieldset class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" class="form-control"
+                    name="email"
+                    placeholder="Enter email address"
+                    id="email"
+                    required>
+                </fieldset>
 
-            <fieldset class="form-group text-right">
-                <input type="submit" class="btn btn-success" value="Register">
-                <a href="/">
-                <input type="button" class="btn btn-warning" value="Cancel">
-                </a>
-            </fieldset>
-        </form>
+                <fieldset class="form-group">
+                    <label for="displayName">Display Name: </label>
+                    <input type="text" class="form-control"
+                    name="displayName"
+                    placeholder="Enter display name"
+                    id="displayName"
+                    required>
+                </fieldset>
+
+                <fieldset class="form-group text-center">
+                    <input type="submit" class="btn btn-success btn-long mt-4" value="REGISTER">
+                    <a href="/">
+                    <input type="button" class="btn btn-warning btn-long" value="CANCEL">
+                    </a>
+                    OR
+                    <a href="/login">
+                    <input type="button" class="btn btn-info btn-long" value="BACK TO LOG IN">
+                    </a>
+                </fieldset>
+            </form>
+        </div>
     </div>
-</div> -->
-
-<div class="row justify-content-md-center">
-    <div class="col-6 text-center rounded p-5 my-5 loginForm">
-        <h1>Register</h1>
-
-        <form class="px-5 mt-4" method="post" autocomplete="off">
-            <fieldset class="form-group">
-                <label for="username">Username: </label>
-                <input type="text" class="form-control"
-                name="username"
-                placeholder="Enter username"
-                id="username"
-                required autofocus>
-            </fieldset>
-
-            <fieldset class="form-group">
-                <label for="password">Password: </label>
-                <input type="password" class="form-control"
-                name="password"
-                placeholder="Enter password"
-                id="password"
-                required>
-            </fieldset>
-
-            <fieldset class="form-group">
-                <label for="email">Email: </label>
-                <input type="email" class="form-control"
-                name="email"
-                placeholder="Enter email address"
-                id="email"
-                required>
-            </fieldset>
-
-            <fieldset class="form-group">
-                <label for="displayName">Display Name: </label>
-                <input type="text" class="form-control"
-                name="displayName"
-                placeholder="Enter display name"
-                id="displayName"
-                required>
-            </fieldset>
-
-            <fieldset class="form-group text-right">
-                <input type="submit" class="btn btn-success btn-long mt-4" value="REGISTER">
-                <a href="/login">
-                <input type="button" class="btn btn-warning btn-long" value="CANCEL">
-                </a>
-            </fieldset>
-
-
-        </form>
-    </div>
-</div>
 
 </main>
 

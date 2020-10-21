@@ -3,66 +3,12 @@
 <%-include ../partials/main_nav.ejs %>
 
 <!-- Content for the Add page -->
-<!-- <div class="container">
-    <div class="row">
-        <div class="offset-md-1 col-md-10">
-            <h1><%= title %></h1>
-
-            <form class="form addForm" method="post">
-
-                <div class="form-group">
-                    <label for="contactNameTextField">Contact Name</label>
-                    <input type="text" class="form-control"
-                    id="contactNameTextField"
-                    placeholder="Enter your contact name"
-                    name="contact_name" 
-                    value="<%= contact.contact_name %>"
-                    required>
-                </div>
-
-                <div class="form-group">
-                    <label for="numberTextField">Number</label>
-                    <input type="text" class="form-control"
-                    id="numberTextField"
-                    placeholder="Enter your contact number"
-                    name="number" 
-                    value="<%= contact.number %>"
-                    required>
-                </div>
-
-                <div class="form-group">
-                    <label for="emailTextField">Email</label>
-                    <input type="text" class="form-control"
-                    id="emailTextField"
-                    placeholder="Enter your contact email"
-                    name="email" 
-                    value="<%= contact.email %>"
-                    required>
-                </div>
-
-                <button class="btn btn-primary" type="submit">
-                    <i class="fas fa-edit"></i> Submit
-                </button>
-
-                <a href="/business-contacts" class="btn btn-warning">
-                    <i class="fas fa-undo"></i> Cancel
-                </a>
-                
-                
-
-                
-            </form>
-        </div>
-    </div>
-</div> -->
-
-
 <div class="row justify-content-md-center">
     <div class="col-6 text-center rounded p-5 my-5 loginForm">
         <h1><%= title %></h1>
 
+        <!-- Adding Form -->
         <form class="px-5 mt-4 addForm" method="post">
-
             <div class="form-group">
                 <label for="contactNameTextField">Contact Name</label>
                 <input type="text" class="form-control"
@@ -94,10 +40,16 @@
             </div>
 
             <fieldset class="form-group text-right">
-                <input type="submit" class="btn btn-success btn-long mt-4" value="EDIT">
-                <a href="/business-contacts">
-                <input type="button" class="btn btn-warning btn-long" value="CANCEL">
+                <input type="submit" class="btn btn-info btn-long mt-4" value="EDIT">
+                
+                <a href="/business-contacts/delete/<%= contact._id %>">
+                    <input type="button" class="btn btn-secondary btn-long btn-delete" value="DELETE">
                 </a>
+
+                <a href="/business-contacts">
+                    <input type="button" class="btn btn-warning btn-long" value="CANCEL">
+                </a>
+                
             </fieldset>
         </form>
     </div>
