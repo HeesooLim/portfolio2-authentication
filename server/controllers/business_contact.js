@@ -22,7 +22,7 @@ module.exports.displayContactList = (req, res, next) => {
             ContactList: contactList, 
             displayName: req.user ? req.user.displayName : ''});
         }
-    });
+    }).sort('contact_name');
 }
 
 module.exports.displayAddPage = (req, res, next) => {
@@ -50,6 +50,8 @@ module.exports.processAddPage = (req, res, next) => {
             res.redirect('/business-contacts');
         }
     });
+
+
 }
 
 module.exports.displayEditPage = (req, res, next) => {
