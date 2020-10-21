@@ -10,12 +10,24 @@
     
     function Start()
     {
-
         let title = document.title;
 
+        // validate the form in contact page
+        if(title === "Contact")
+        {
+            formValidate();
+        }
+
+        displayNameHomePage();     
+
+        confirmDelete();
+    }
+
+    function displayNameHomePage()
+    {
         // h1 text ("Welcome,") in home page
         let welcomeText = document.getElementById('welcomeText');
-
+        
         // get url of current page
         let url = new URL(window.location);
 
@@ -25,23 +37,29 @@
         let email = url.searchParams.get("email");
         let message = url.searchParams.get("message");
         
-        // validate the form in contact page
-        if(title === "Contact")
-        {
-            formValidate();
-        }
 
         if (welcomeText) 
         {
-            // is the first name value is successfully passed, print all values
-            if (firstName) 
+            let displayName = document.getElementById('displayName');
+
+            // if the user is logged in, display the account's display name
+            if(displayName)
             {
-                printValue(firstName, lastName, email, message);
-                welcomeText.innerHTML = `Welcome, ${firstName}`;
+                welcomeText.innerHTML = `Welcome, ${displayName.innerText}`;
+            }
+            
+            // otherwise, display the name from contact form
+            else
+            {
+                // is the first name value is successfully passed, print all values
+                if (firstName) 
+                {
+                    printValue(firstName, lastName, email, message);
+                    welcomeText.innerHTML = `Welcome, ${firstName}`;
+                }
             }
         }
-        
-        confirmDelete();
+
     }
     
     function formValidate()
