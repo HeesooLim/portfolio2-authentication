@@ -6,22 +6,21 @@
     <main class="container">
     <div class="row">
         <div class="offset-md-1 col-md-10">
-            <h1> <%= title %> </h1>
-            <% if(typeof displayName == 'string' && displayName) { %>
-            <a href="/business-contacts/add" class="btn btn-primary" role="button">
-            <i class="fas fa-plus-circle"></i> Add a Contact</a>
-            <% } %>
+            <h1 class="text-center" id="businessContactHeading"> <%= title %> </h1>
             <br>
-            <table class="table table-hover table-light">
+            <table class="table table-hover table-color" id="businessTable">
                 <!-- Header Row -->
-                <tr class="table-info d-flex">
+                <tr class="table-header-color d-flex">
                     <% if(typeof displayName == 'string' && displayName) { %>
                         <th class="text-center col-3">Contact Name</th>
                         <th class="text-center col-2">Number</th>
                         <th class="text-center col-5">Email</th>
                         
                         <th class="text-center col-1"></th>
-                        <th class="text-center col-1"></th>
+                        <th class="text-center col-1">
+                            <a href="/business-contacts/add" class="btn btn-sm btn-outline-primary" role="button">
+                                <i class="fas fa-plus-circle"></i></a>
+                        </th>
                     <% } else { %>
                             <th class="text-center col-3">Contact Name</th>
                         <th class="text-center col-3">Number</th>
@@ -37,12 +36,12 @@
                             <td class="text-center col-2"><%= ContactList[count].number %></td>
                             <td class="text-center col-5"><%= ContactList[count].email %></td>
                             <td class="text-right col-1">
-                                <a href="/business-contacts/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
+                                <a href="/business-contacts/edit/<%= ContactList[count]._id %>" class="btn btn-dark btn-sm">
                                     <i class="fas fa-pencil-alt"></i>
                                 </a>
                             </td>
                             <td class="text-center col-1">
-                                <a href="/business-contacts/delete/<%= ContactList[count]._id %>" class="btn btn-warning btn-sm">
+                                <a href="/business-contacts/delete/<%= ContactList[count]._id %>" class="btn btn-secondary btn-sm btn-delete">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                             </td>

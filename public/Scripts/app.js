@@ -44,7 +44,7 @@
 
 
 
-        let deleteButtons = document.querySelectorAll('.btn-warning');
+        let deleteButtons = document.querySelectorAll('.btn-delete');
 
         for (const button of deleteButtons) 
         {

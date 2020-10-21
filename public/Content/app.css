@@ -19,23 +19,29 @@ body {
 /* no underline when hovered */
 a:hover {
   text-decoration: none;
+  color: blanchedalmond;
+}
+
+.btn-long {
+  width: 100%;
+  margin: 5px 0;
 }
 
 /* applied to all containers */
-.generalContainer {
+/* .generalContainer {
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
-}
+} */
 
 /* footerContainer > sitemap */
-.sitemap {
+/* .sitemap {
   display: inline-block;
   text-align: left;
   margin-right: 10%;
-}
+} */
 
 /* anchors in sitemap */
-.sitemap a {
+/* .sitemap a {
   display: block;
   color:  rgb(182, 182, 182);
   padding-bottom: 5px;
@@ -43,31 +49,44 @@ a:hover {
 
 .sitemap a:hover {
   color: blanchedalmond;
-}
+} */
 
 /* Container for footer on every page */
-.footerContainer {
+footer {
   background-color: #304B64;
+  /* font-size: 14px; */
+  /* color: rgb(182, 182, 182); */
+}
+
+footer a {
   font-size: 14px;
   color: rgb(182, 182, 182);
 }
 
-.footerContainer h3 {
+.footerContact a {
+  line-height: 37px;
+}
+
+/* footer a:hover {
+  color: blanchedalmond;
+} */
+
+/* .footerContainer h3 {
   padding: 20px 0px 20px 0px;
   margin-bottom: 0px;
   color: white;
-}
+} */
 
 /* footerContainer > footerContact */
-.footerContact {
+/* .footerContact {
   display: inline-block;
   text-align: left;
   margin-left: 10%;
-}
+} */
 
-.footerContact p {
+/* .footerContact p {
   margin-bottom: 12.5px;
-}
+} */
 
 /* footer navigation bar custom style */
 .navbar-custom {
@@ -75,7 +94,7 @@ a:hover {
 }
 
 /* buttons in all pages */
-.generalContainer a.button {
+/* .generalContainer a.button {
   display: inline-block;
   margin-top: 20px;
   background-color:rgb(89, 107, 134);
@@ -83,37 +102,84 @@ a:hover {
   padding: 15px 25px 15px 25px;
   color: white;
   border-radius: 3px;
-}
+} */
 
-.generalContainer a.button:hover {
+/* .generalContainer a.button:hover {
   background-color: rgb(61, 73, 92);
-}
+} */
 
 
 /* style for home page */
-.generalContainer .homeContainer {
+/* .generalContainer .homeContainer {
   background-color:  rgba(255, 255, 255, 0.7);
 }
 
 .homeContainer {
   padding: 100px 0px 150px 0px ;
   margin-bottom: 200px;
+} */
+
+.loginForm {
+  background-color: rgba(255, 255, 255, 0.747);
+  margin-bottom: 180px;
 }
 
-.homeContainer h1 {
+.loginForm h1, #businessContactHeading {
+  font-size: 3em;
+  font-family: arial;
+}
+
+/* .rounded-circle {
+  height: 200px;
+  width: 200px;
+} */
+
+#businessContactHeading {
+  margin-top: 70px;
+}
+
+h1 {
   font-size: 5em;
   font-family: serif;
 }
 
-.homeContainer h6 {
+.container .rounded-bottom h6, .container .rounded-bottom h5 {
   margin-top: 20px;
   font-family: serif;
 }
 
+.container .rounded-bottom {
+  background-color: rgba(255, 255, 255, 0.733);
+  margin-bottom: 150px;
+}
+
+.btn-xl {
+  padding: 20px 40px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.navbar-text {
+  margin: 0px 10px;
+}
+
+.table-color {
+  background-color: rgba(255, 255, 255, 0.863);
+}
+
+.table-header-color {
+  background-color: rgba(228, 228, 228, 0.829);
+}
+
+#businessTable {
+  margin: 40px 0px;
+}
+
+
 /* container in about, products, service, and contact */
-.productContainer {
+/* .productContainer { */
   /* padding: 5% 15% 5% 15%; */
-  padding: 0% 15% 0% 15%;
+  /* padding: 0% 15% 0% 15%;
   margin: 150px 0px 150px 0px;
   display: flex;
   justify-content: center;
@@ -122,47 +188,56 @@ a:hover {
 
 .productContainer h1 {
   display: block;
-}
+} */
 
 /* image container in productContainer */
-.productImg {
+/* .productImg {
   margin-top: 7%;
   margin-bottom: 7%;
   width: 300px;
   height: 300px;
-}
+} */
+
+
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
-.productDescription {
-  flex-grow: 1;
-  width: 65%;
-  padding: 0px 80px 0px 80px;
-  text-align: left;
+.template {
+  background-color: rgba(255, 255, 255, 0.795);
+  margin: 150px 0px;
+  padding: 50px 0px;
+}
+.projectDescription {
+  padding: 7% 0;
+}
+
+/* contact page form bkground */
+.row .col-8 {
+  background-color: rgba(255, 255, 255, 0.74);
 }
 
 /* align the text to the right side for a flipped product element */
-.project:nth-of-type(2) .productDescription {
+/* .project:nth-of-type(2) .productDescription {
   text-align: right;
-}
+} */
 
 
 /* container for services, contact */
-.serviceContainer {
+/* .serviceContainer {
   padding-top: 60px;
   margin: 110px 0px 150px 0px;
-}
+} */
 
 /* remove the margin in product container */
-.serviceContainer .productContainer {
+/* .serviceContainer .productContainer {
   margin: 0px 0px 0px 0px;
-}
+} */
 
 /* service element */
-.serviceIndividual {
+/* .serviceIndividual {
   background-color: rgb(163, 163, 163);
   width: 200px;
   height: 200px;
@@ -170,6 +245,12 @@ img {
   position: relative;
   margin-top: 55px;
   margin-bottom: 130px;
+} */
+
+#serviceContainter .col-2 {
+  background-color:  rgb(190, 190, 190);
+  padding: 5px;
+  margin: 10px;
 }
 
 /* overlay element on serviceIndividual */
@@ -182,29 +263,40 @@ img {
   background-color: rgb(190, 190, 190);
   opacity: 0;
   padding: 20px;
+  text-align: center;
 }
 
-.serviceIndividual:hover .overlay {
-  opacity: 0.7;
+#serviceContainter .col-2:hover .overlay {
+  opacity: 0.85;
   transition: 0.5s;
 }
 
+#service .title {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#contactHeading {
+  /* padding: 70px 0px 50px 0px; */
+  margin-bottom: 30px;
+  font-size: 30px;
+}
 /* form for contact page */
-form {
+/* form {
   margin: 5% 15% 5% 15%;
   padding: 5%;
   background-color: rgba(255, 255, 255, 0.267);
   box-shadow: 1px 1px 10px #cfcfcf;
-}
+} */
 
 /* container in contact page */
-.contactContainer {
+/* .contactContainer {
   padding: 0% 15% 5% 15%;
   margin: 0px 0px 150px 0px;
-}
+} */
 
 /* my contact information container */
-#myContact {
+/* #myContact {
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -212,22 +304,22 @@ form {
   margin: 5% 15% 5% 15%;
   padding: 30px 0px 10px 0px;
   box-shadow: 1px 1px 10px #cfcfcf;
-}
+} */
 
 /* columns in my contact information */
-.contactColumn  {
+/* .contactColumn  {
   display: inline-block;
   text-align: left;
-}
+} */
 
 /* left columns in my contact information */
-.contactColumn:first-of-type {
+/* .contactColumn:first-of-type {
   margin-right: 5%;
-}
+} */
 
 /* rightcolumns in my contact information */
-.contactColumn:last-of-type {
+/* .contactColumn:last-of-type {
   margin-left: 5%;
-}
+} */
 
 /* media (1150px) */
