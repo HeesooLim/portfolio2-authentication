@@ -11,7 +11,7 @@
 /* general */
 body {
   margin-top: 54px;
-  background-image: linear-gradient(rgba(196, 196, 196, 0.863), rgba(196, 196, 196, 0.863)), url(/Assets/images/background2.jpg);
+  background-image: linear-gradient(rgba(196, 196, 196, 0.863), rgba(196, 196, 196, 0.863)), url(/Assets/images/background3.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
